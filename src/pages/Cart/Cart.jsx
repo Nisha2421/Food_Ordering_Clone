@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import "./Cart.css";
 import { useNavigate } from "react-router-dom";
 import { useOrderContext } from "../../context/OrderContext";
@@ -7,6 +7,7 @@ const Cart = () => {
   const { cartItem, food_list, removeFromCart , getTotalCartAmount} = useOrderContext()
 
   const navigate = useNavigate ();
+  useEffect(() => { scrollTo(0,0)},[])
 
   return (
     <div className="cart">
