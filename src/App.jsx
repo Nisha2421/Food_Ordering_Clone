@@ -7,12 +7,14 @@ import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
 import { useOrderContext } from "./context/OrderContext";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   const { showLogin, setShowLogin } = useOrderContext();
 
   return (
     <>
+    <ToastContainer />
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
       <div className="app">
         <Navbar />

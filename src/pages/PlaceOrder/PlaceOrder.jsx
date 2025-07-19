@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import './PlaceOrder.css'
 import { useOrderContext } from '../../context/OrderContext'
+import { toast } from 'react-toastify'
 
 const PlaceOrder = () => {
 
@@ -46,7 +47,7 @@ const PlaceOrder = () => {
             </div>
            
           </div>
-           <button>PROCEED TO CHECKOUT</button>
+           <button onClick={toast.error("Sorry!!!! this feature is under development")}>PROCEED TO CHECKOUT</button>
         </div>
         </div>
     </form>
