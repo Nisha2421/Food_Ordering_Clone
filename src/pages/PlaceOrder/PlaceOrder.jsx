@@ -46,7 +46,7 @@ const PlaceOrder = () => {
             </div>
            
           </div>
-           <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
+           <button>PROCEED TO CHECKOUT</button>
         </div>
         </div>
     </form>
