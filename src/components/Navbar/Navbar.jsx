@@ -14,7 +14,7 @@ const Navbar = () => {
       <img src={assets.logo} alt="" className="logo" />
       </Link>
       <ul className="navbar-menu">
-        <Link to='/' cl onClick={()=>setMenu("home")} className={`${menu==="home"?"active":"translate duration-500 hover:scale-105"}`}>Home</Link>
+        <Link to='/' onClick={()=>setMenu("home")} className={`${menu==="home"?"active":"translate duration-500 hover:scale-105"}`}>Home</Link>
         <a href="#explore-menu" onClick={()=>setMenu("menu")} className={`${menu==="menu"?"active":"translate duration-500 hover:scale-105"}`}>Menu</a>
         <a href="#app-download" onClick={()=>setMenu("mobile-app")} className={`${menu==="mobile-app"?"active":"translate duration-500 hover:scale-105"} `}>Mobile-app</a>
         <a href="#footer" onClick={()=>setMenu("contact-us")} className={`${menu==="contact-us"?"active":"translate duration-500 hover:scale-105"} `}>Contact us</a>

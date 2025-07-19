@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Cart.css";
 import { useNavigate } from "react-router-dom";
 import { useOrderContext } from "../../context/OrderContext";
+import { toast } from "react-toastify";
 
 const Cart = () => {
   const { cartItem, food_list, removeFromCart , getTotalCartAmount} = useOrderContext()
@@ -61,7 +62,7 @@ const Cart = () => {
             </div>
            
           </div>
-           <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
+           <button onClick={() => navigate("/order")}>PROCEED TO CHECKOUT</button>
         </div>
         <div className="cart-promocode">
           <div>

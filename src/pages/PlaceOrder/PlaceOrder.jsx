@@ -6,6 +6,11 @@ import { toast } from 'react-toastify'
 const PlaceOrder = () => {
 
   const {getTotalCartAmount} = useOrderContext()
+    const notify = (e) => {
+      e.preventDefault()      
+       toast.error("Sorry!!!! this feature is under development");
+    }
+
 
   return (
     <form className='place-order'>
@@ -47,7 +52,7 @@ const PlaceOrder = () => {
             </div>
            
           </div>
-           <button onClick={toast.error("Sorry!!!! this feature is under development")}>PROCEED TO CHECKOUT</button>
+           <button  onClick={(e) =>notify(e)}>PROCEED TO CHECKOUT</button>
         </div>
         </div>
     </form>
