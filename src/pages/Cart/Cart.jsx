@@ -62,7 +62,7 @@ const Cart = () => {
             </div>
            
           </div>
-           <button onClick={() => navigate("/order")}>PROCEED TO CHECKOUT</button>
+           <button onClick={(e) =>{ e.preventDefault();     navigate("/order")}}>PROCEED TO CHECKOUT</button>
         </div>
         <div className="cart-promocode">
           <div>
